@@ -75,7 +75,7 @@ function dispMem(x) {
 				break;
 		case 3: famimg.src = "./images/bbro.jpg";
 				break;
-		case 4: famimg.src = "./images/sbro.jpg";
+		case 4: famimg.src = "./images/sbro.JPG";
 				break;
 		case 5: famimg.src = "./images/fam.jpg";
 				break;
