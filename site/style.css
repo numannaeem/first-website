@@ -1,0 +1,171 @@
+*{
+	margin: 0px;
+	scroll-behavior: smooth;
+}
+
+body {  
+  color: black;
+  font-size: 1.4em;
+  font-family: 'Red Hat Text', sans-serif;
+}
+
+p {
+	line-height: 1.6;
+	margin-top: 4px;
+	margin-bottom: 5px;
+}
+
+a {
+	color: gray;
+	text-decoration: none;
+}
+
+/*-------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.headings {
+	text-align: left;
+	margin-top: 4px;
+	margin-bottom: 15px;
+	font-family: 'Raleway Dots', sans-serif;
+	padding: 3px 0px 8px 0px;
+	font-size: 2.2rem;
+	color: Brown;
+	border-bottom: 0.11rem solid Brown;
+
+}
+
+.boxdiv {
+	transition: background-color 0.5s linear , color 0.5s linear;
+	background-color: #fffff1;
+ 	border-bottom: solid;
+  	margin: 0;
+  	padding: 10px 30px 15px 30px;
+}
+
+.boxdiv ul {
+	list-style: circle;
+	margin: 8px 1px 4px 0px;
+}
+
+.boxdiv ol{
+	margin: 8px 1px 4px 0px;
+}
+
+
+.filler {
+	padding-top: 9px;
+	padding-bottom: 2px;
+	height: 3.7rem;
+}
+
+.CoImg {
+	height: 12rem;
+	margin-top: 0.625rem;
+	margin-bottom: 0.625rem;
+}
+
+/*-------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+#header {
+	transition: background-image 0.4s ease-in;
+	background-image: url(./images/bgimgwhite.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: top;
+	background-repeat: no-repeat;
+	user-select: none;
+	font-family: 'Jost', serif;
+	color: #996b17;
+	text-align: center;
+}
+
+#header a {
+	color: #4f4f4f;
+}
+
+#header h1 {	
+	padding-top: 9.7rem;
+	font-size: 12.1vw;
+}
+
+#header h3 {
+	font-size: 1.8rem;
+	padding-top: 1.78rem;
+	padding-bottom: 9.5rem;
+}
+
+#navbar {
+	height: 4.6875rem;
+	overflow: hidden;
+	background-color: #383431;
+	position: sticky;
+	top: 0;
+	border-top: solid;
+	border-bottom: solid;
+	border-color: #cc9900;
+}
+
+#logo {
+	display: block;
+	margin-left: auto;
+	height: 100%;
+	margin-right: 10px;
+}
+
+
+#mButtons a {
+	margin: 0px 0px; 
+	font-size: 1.4rem;
+	font-family: 'Raleway Dots', sans-serif;
+	float: left;
+	padding: 1.56rem 1.44vw;
+	text-decoration: none;
+	text-align: center;
+	border-right: solid;
+	border-right-color: #cc9900;
+}
+
+#mButtons a:link , a:visited {
+  color: White;
+}
+
+
+#mButtons a:hover {
+  color: White;
+  background: gray;
+ 
+}
+
+#content {
+	transition: background-color 0.5s linear , color 0.5s linear; 
+}
+
+#familyImageText {
+	width: fit-content;
+} 
+#family li {
+	width: fit-content;
+	margin: 15px;
+}
+
+#famimg {
+	transition: opacity 0.3s ease-out;
+	border: solid 2px Brown; 
+	opacity: 0;
+	top: 5px;
+	right: 0;
+	float: right;
+	position: relative;
+	max-height: 18.5rem;
+	max-width: 38%;
+}
+
+#closure {
+	transition: background-color 0.5s linear , color 0.5s linear; 
+	text-align: center;
+	font-size: 0.75rem;
+	padding: 0.4rem 0rem 0.7rem 0rem;
+	background-color: white;
+	color: black;
+}
