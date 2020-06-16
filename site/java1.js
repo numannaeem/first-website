@@ -69,13 +69,13 @@ function dispMem(x) {
 	var famimg = document.getElementById("famimg");
 	famimg.style.opacity = "1";
 	switch(x) {
-		case 1: famimg.src = "./images/Dad.jpeg";
+		case 1: famimg.src = "./images/dad.jpeg";
 				break;
-		case 2: famimg.src = "./images/Mom.jpg";
+		case 2: famimg.src = "./images/mom.jpg";
 				break;
-		case 3: famimg.src = "./images/bBro.jpg";
+		case 3: famimg.src = "./images/bbro.jpg";
 				break;
-		case 4: famimg.src = "./images/sBro.jpg";
+		case 4: famimg.src = "./images/sbro.jpg";
 				break;
 		case 5: famimg.src = "./images/fam.jpg";
 				break;
