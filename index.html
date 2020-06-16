@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>First Webpage!</title>
+  <link href='https://fonts.googleapis.com/css?family=Jost|Red Hat Text|Raleway Dots' rel='stylesheet'>
+  <link rel="stylesheet" href="./style.css">
+  <script src="java1.js"></script>
+
+</head>
+
+<body onload="checkDark()">
+	
+
+	<section id="header">
+		<h1 id="mainHeader" onclick="updtHeader()">hello, world.</h1>
+		<br>
+		<h3>Here's (almost) everything about <span id="me" style="color: #4f4f4f" onmouseover="dispMe()"  onmouseleave="darkMode()">me!</span></h3>
+	</section>
+
+	<section id="navbar">
+		<div id="mButtons">
+		<b>
+			<a href="#about">About Me</a>
+			<a href="#social_media">Social Media</a>
+			<a href="#family">The Family</a> 
+		</b>
+		</div>
+		<a href="#header"><img id="logo" src="./images/logo.jpg"></a>
+	</section>
+			
+	
+	
+	<section id="contents">
+	<div class="boxdiv" id="about">
+		<img class="filler" title="You're here!" src="https://freepngimg.com/download/symbol/62766-map-symbol-computer-location-icons-free-download-png-hd.png">
+		<h3 class="headings">in a nutshell</h3>
+		<p>
+			For anyone who doesn't know me, I'm Numan Naeem. Been here and about since the 23rd of February, of 2001. How wonderful life used to be before that day! Anyhow, I was born in Riyadh, Saudi Arabia, and lived there for the next 15 years before moving to India, to my hometown - Kannur, Kerala. I'm now pursuing CSE at NMAMIT, Mangalore.
+		</p>
+	</div>
+
+	<div class="boxdiv" id="social_media">
+		<img class="filler" onmouseover= title="You're here!" src="https://freepngimg.com/download/symbol/62766-map-symbol-computer-location-icons-free-download-png-hd.png">
+		<h3 class="headings">find me</h3>
+		<p>You can find me on most any social media platforms: </p>
+		<ul>
+			<li>
+				<p>
+					Instagram - <a style="color: #c40092;" href="https://www.instagram.com/notnuman/" target=blank_>@notnuman</a>
+				</p>
+			</li>
+			
+			<li>
+				<p>
+					Facebook - <a style="color: rgb(0,0,204);" href="https://www.facebook.com/numxn/" target=blank_>Numan Naeem</a>
+				</p>
+			</li>
+			
+			<li>
+				<p>
+					Twitter - <a style="color: rgb(29,161,242);" href="https://twitter.com/numanaeem" target=blank_>@numanaeem</a>
+				</p>
+			</li>
+		</ul>
+		<p>Mobile : <b>+91 8606521714</b> | Email ID : <b>numan.naeem9@gmail.com</b></p>
+	</div>  
+
+	<div class="boxdiv" id="family" >
+		<img class="filler" title="You're here!" src="https://freepngimg.com/download/symbol/62766-map-symbol-computer-location-icons-free-download-png-hd.png">
+		<h3 class="headings">mi familia</h3>
+		<p>
+			Or, the people with me through thick and thin. Here they are:
+			<img id="famimg">
+			<ul>
+				<li onmouseover="dispMem(1)" onmouseleave="clearImg()">Naeem Cee <b>(aka The Dad!)</b> </li>
+				<li onmouseover="dispMem(2)" onmouseleave="clearImg()">Raseena Naeem <b>(aka The Mom!)</b> </li>
+				<li onmouseover="dispMem(3)" onmouseleave="clearImg()">Nihal Naeem <b>(aka The Elder Brother!)</b> </li>
+				<li onmouseover="dispMem(4)" onmouseleave="clearImg()">Raihan Naeem <b>(aka The "broski :P")</b> </li>
+			</ul>
+		</p>
+		<br>
+		<p onmouseover="dispMem(5)" onmouseleave="clearImg()" id="familyImageText">
+			<em>(Psst...hover over this text for a family photo!)</em>
+		</p>
+	</div>
+
+	</section>
+
+	<div id="closure">
+		<p>© Numxn | All rights reserved</p>
+		<input type="checkbox" id="darkMode" name="darkMode" onclick="darkMode()"> 
+		<label for="darkMode">Dark Mode</label>
+	</div>
+</body>
+
+
+</html>
