@@ -59,7 +59,7 @@ function darkMode() {
 
 function dispMe() {
 	var bg = document.getElementById("header");
-	bg.style.backgroundImage = "url(./images/meBG.jpg";
+	bg.style.backgroundImage = "url(./images/mebg.jpg";
 	
 }
 
