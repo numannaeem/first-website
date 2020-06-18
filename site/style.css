@@ -146,7 +146,6 @@ a {
 
 #famimgdiv {
 	background-color: rgba(55,55,55,0.5);
-	color: rgba(155,155,155,0.5);
 	margin: 1rem 0;
 	display: grid;
 	grid-template-columns: repeat(3,1fr);
@@ -157,18 +156,21 @@ a {
 	max-height: 27vw;
 	min-height: 240px;
 	margin: auto;
-	border: rgba(10,10,10,0.7) solid 3px;
-	opacity: 1;
+	border: rgba(90,90,90,1) solid;
 }
 
-#backbtn, #frntbtn {
+#backbtn, #frntbtn { 
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	height: 100%;
+	color: transparent;
+	transition: 0.4s;
 }
 
-
+#backbtn:hover, #frntbtn:hover {
+	 color: rgb(170,170,170);
+}
 
 #closure {
 	transition: background-color 0.5s linear , color 0.5s linear; 
