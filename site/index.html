@@ -71,18 +71,18 @@
 		<h3 class="headings">mi familia</h3>
 		<p>Or, the people with me through thick and thin. Here they are:</p>
 		<ul>
-			<li onmouseover="dispMem(1)" onmouseleave="clearImg()">Naeem Cee <b>(aka The Dad!)</b> </li>
-			<li onmouseover="dispMem(2)" onmouseleave="clearImg()">Raseena Naeem <b>(aka The Mom!)</b> </li>
-			<li onmouseover="dispMem(3)" onmouseleave="clearImg()">Nihal Naeem <b>(aka The Elder Brother!)</b> </li>
-			<li onmouseover="dispMem(4)" onmouseleave="clearImg()">Raihan Naeem <b>(aka The "broski :P")</b> </li>
+			<li>Naeem Cee <b>(aka The Dad!)</b> </li>
+			<li>Raseena Naeem <b>(aka The Mom!)</b> </li>
+			<li>Nihal Naeem <b>(aka The Elder Brother!)</b> </li>
+			<li>Raihan Naeem <b>(aka The "broski :P")</b> </li>
 		</ul>
 		<div id="famimgdiv">
-			<div id="backbtn"></div>
-			<img id="famimg" height="350" src="./images/dad.jpeg">
-			<div id="frntbtn"></div>
+			<div id="backbtn" onclick="chgImg(-1)"><p>previous</p></div>
+			<img id="famimg" src="./images/dad.jpeg">
+			<div id="frntbtn" onclick="chgImg(1)"><p>next</p></div>
 		</div>
-		<p onmouseover="dispMem(5)" onmouseleave="clearImg()" id="familyImageText">
-			<em>(Psst...hover over this text for a family photo!)</em>
+		<p>
+			<em>(Psst...find the family photo!)</em>
 		</p>
 	</div>
 
