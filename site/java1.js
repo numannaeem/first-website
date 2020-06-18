@@ -2,13 +2,13 @@ var headerTexts = ["hello, world.","welcome","to","my","website.","enjoy","your"
 					"stay!","okay,","you","may","stop","clicking","now.","seriously?",
 					"you're","still","doing","this?","wow.","-_-","stop!","stop!!",
 					"stop!!!","alright.","i'm done.","bye.","~"];
-var counter = 1;
+var hdrCounter = 1;
 
 function updtHeader() {	
-	document.getElementById("mainHeader").innerHTML = headerTexts[counter];
-	counter++;
-	if(counter == headerTexts.length) {
-		counter = 0;
+	document.getElementById("mainHeader").innerHTML = headerTexts[hdrCounter];
+	hdrCounter++;
+	if(hdrCounter == headerTexts.length) {
+		hdrCounter = 0;
 	}
 }
 
@@ -65,7 +65,7 @@ function dispMe() {
 
 //---------------PRINT FAMILY IMAGES-------------------------------------------------------------------
 
-function dispMem(x) {
+function imgChg() {
 	var famimg = document.getElementById("famimg");
 	famimg.style.opacity = "1";
 	switch(x) {
@@ -73,7 +73,7 @@ function dispMem(x) {
 				break;
 		case 2: famimg.src = "./images/mom.jpg";
 				break;
-		case 3: famimg.src = "./images/bbro.jpg";
+		case 3: famimg.src = "./images/bbro.jpeg";
 				break;
 		case 4: famimg.src = "./images/sbro.JPG";
 				break;
@@ -83,7 +83,4 @@ function dispMem(x) {
 	
 }
 
-function clearImg() {
-	var famimg = document.getElementById("famimg");
-	famimg.style.opacity = "0";
-}
+

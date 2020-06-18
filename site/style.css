@@ -4,9 +4,10 @@
 }
 
 body {  
-  color: black;
-  font-size: 1.4em;
-  font-family: 'Red Hat Text', sans-serif;
+	min-width: 600px;
+  	color: black;
+  	font-size: 1.4em;
+  	font-family: 'Red Hat Text', sans-serif;
 }
 
 p {
@@ -145,24 +146,34 @@ a {
 	width: fit-content;
 } 
 
-#family {
-	overflow-y:auto ;
-}
-
 #family li {
 	width: fit-content;
 	margin: 15px;
 }
 
-#famimg {
-	transition: opacity 0.3s ease-out;
-	opacity: 0;
-	border: solid 0.2rem Brown;
-	float: right;
-	position: relative;
-	max-height: 15rem;
-	max-width: 37%;
+#famimgdiv {
+	background-color: rgba(55,55,55,0.5);
+	margin: 1rem 0;
+	display: grid;
+	grid-template-columns: repeat(3,1fr);
 }
+
+#famimg {
+	margin: auto;
+	border: rgba(10,10,10,0.7) solid 3px;
+	opacity: 1;
+}
+
+#backbtn {
+	grid-column-start: 1;
+	grid-column-end: 2;
+	opacity: 0;
+}
+
+#frntbtn {
+	opacity: 0;
+}
+
 
 #closure {
 	transition: background-color 0.5s linear , color 0.5s linear; 
@@ -171,10 +182,4 @@ a {
 	padding: 0.4rem 0rem 0.7rem 0rem;
 	background-color: white;
 	color: black;
-}
-
-@media only screen and (max-width: 768px) { 
-  #famimg { 
-    display: none; 
-  } 
 }
