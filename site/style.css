@@ -145,21 +145,24 @@ a {
 
 
 #famimgdiv {
-	background-color: rgba(55,55,55,0.5);
+	background-color: rgba(85,85,85,0.5);
 	margin: 1rem 0;
 	display: grid;
 	grid-template-columns: repeat(3,1fr);
 	align-items: center;
+	border-radius: 15rem;
 }
 
 #famimg {
-	max-height: 27vw;
+	transition: 0.15s ease-in;
+	max-height: 25vw;
 	min-height: 240px;
 	margin: auto;
-	border: rgba(90,90,90,1) solid;
 }
 
 #backbtn, #frntbtn { 
+	user-select: none;
+	font-size: 4rem;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -169,7 +172,7 @@ a {
 }
 
 #backbtn:hover, #frntbtn:hover {
-	 color: rgb(170,170,170);
+	 color: rgb(110,110,110);
 }
 
 #closure {
@@ -179,4 +182,13 @@ a {
 	padding: 0.4rem 0rem 0.7rem 0rem;
 	background-color: white;
 	color: black;
+}
+
+#darkmode {
+	height: 0.75rem;
+	width: 0.75rem;
+}
+
+#closure > label {
+	font-size: 0.75rem;
 }
