@@ -60,12 +60,6 @@ a {
 	height: 3.7rem;
 }
 
-.CoImg {
-	height: 12rem;
-	margin-top: 0.625rem;
-	margin-bottom: 0.625rem;
-}
-
 /*-------------------------------------------------------------------------------------------------------------------------------------------------*/
 
 
@@ -88,7 +82,7 @@ a {
 
 #header h1 {	
 	padding-top: 9.7rem;
-	font-size: 12.1vw;
+	font-size: 11.7rem;
 }
 
 #header h3 {
@@ -98,18 +92,18 @@ a {
 }
 
 #navbar {
-	height: 4.6875rem;
+	height: 4.85rem;
 	overflow: hidden;
 	background-color: #383431;
 	position: sticky;
 	top: 0;
-	border-top: solid;
-	border-bottom: solid;
+	border-bottom: 1px solid;
 	border-color: #cc9900;
 }
 
 #logo {
-	float: right;
+	position: absolute;
+	right: 0;
 	height: 100%;
 	margin-right: 10px;
 }
@@ -123,23 +117,23 @@ a {
 	padding: 1.56rem 1.44vw;
 	text-decoration: none;
 	text-align: center;
-	border-right: solid;
-	border-right-color: #cc9900;
+	
 }
 
 #mButtons a:link , a:visited {
-  color: White;
+  	color: White;
 }
 
 
 #mButtons a:hover {
-  color: White;
-  background: gray;
+	border-bottom: solid #cc9900 10px;
+  	color: White;
+  	background: rgba(30,30,30,0.4);
  
 }
 
 #content {
-	transition: background-color 0.5s linear , color 0.5s linear; 
+	transition: 0.5s linear; 
 }
 
 #potrait {
@@ -147,9 +141,9 @@ a {
 	width: 250px;
 	object-fit: cover;
 	float: left;
-	padding-right: 0.7rem;
 	border-right: rgb(140,140,140) solid 3px;
-	margin-right: 0.7rem;  
+	margin-right: 0.9rem;
+	  
 }
 
 #famimgdiv {
@@ -158,7 +152,7 @@ a {
 	display: grid;
 	grid-template-columns: repeat(3,1fr);
 	align-items: center;
-	height: 22rem;
+	height: 23rem;
 	border-radius: 2rem;
 }
 
@@ -177,7 +171,7 @@ a {
 	align-items: center;
 	height: 100%;
 	color: transparent;
-	transition: 0.5s ease-out;
+	transition: border 0.5s ease-out;
 	border-color: transparent;
 }
 
