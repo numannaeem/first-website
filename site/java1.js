@@ -58,12 +58,6 @@ function darkMode() {
 	}
 }
 
-function dispMe() {
-	var bg = document.getElementById("header");
-	bg.style.backgroundImage = "url(./images/mebg.jpg";
-	
-}
-
 //---------------PRINT FAMILY IMAGES-------------------------------------------------------------------
 
 function chgImg(x) {
