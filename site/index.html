@@ -20,14 +20,18 @@
 	</div>
 
 	<div id="navbar">
-		<div id="mButtons">
-			<b>
-				<a href="#about">About Me</a>
-				<a href="#socialmedia">Social Media</a>
-				<a href="#family">The Family</a> 
-			</b>
-		</div>
-		<a href="#header"><img id="logo" src="./images/logo.jpg"></a>
+		<div class="hamburger" onclick="dropMenu()">
+			<span class="top"></span>
+			<span class="middle"></span>
+			<span class="bottom"></span>
+		</div>	
+		<a href="#header" ><img id="logo" src="./images/logo.jpg"></a>
+		<b>
+			<a class="menu-items mi-collapsed" href="#about">About Me</a>
+			<a class="menu-items mi-collapsed" href="#socialmedia">Social Media</a>
+			<a class="menu-items mi-collapsed" href="#family">The Family</a> 
+		</b>
+			
 	</div>		
 	
 	<div id="contents">
@@ -35,7 +39,7 @@
 			<img class="filler" title="You're here!" src="https://freepngimg.com/download/symbol/62766-map-symbol-computer-location-icons-free-download-png-hd.png">
 			<h3 class="headings">in a nutshell</h3>
 			<p>
-				<img id="potrait" src="./images/me.jpg">
+				<img id="portrait" src="./images/me.jpg">
 				For anyone who doesn't know me, I'm Numan Naeem. Been here and about since the 23rd of February, of 2001. How wonderful life used to be before that day! Anyhow, I was born in Riyadh, Saudi Arabia, and lived there for the next 15 years before moving to India, to my hometown - Kannur, Kerala. I'm now pursuing CSE at NMAMIT, Mangalore.
 				<br><br>
 				That's about it. Explore the rest of the webpage!
@@ -65,7 +69,7 @@
 					</p>
 				</li>
 			</ul>
-			<p>Mobile : <b>+91 8606521714</b> | Email ID : <b>numan.naeem9@gmail.com</b></p>
+			<p>Mobile : <b>+91 8606521714</b> | Email ID&nbsp:&nbsp<b>numan.naeem9@gmail.com</b></p>
 		</section>  
 
 		<section class="boxdiv" id="family">
@@ -73,19 +77,19 @@
 			<h3 class="headings">mi familia</h3>
 			<p>Or, the people with me through thick and thin. Here they are:</p>
 			<ul>
-				<li>Naeem Cee <b>(aka The Dad!)</b> </li>
-				<li>Raseena Naeem <b>(aka The Mom!)</b> </li>
-				<li>Nihal Naeem <b>(aka The Elder Brother!)</b> </li>
-				<li>Raihan Naeem <b>(aka The "broski :P")</b> </li>
+				<li>Naeem Cee <b>(aka&nbspThe&nbspDad!)</b> </li>
+				<li>Raseena Naeem <b>(aka&nbspThe&nbspMom!)</b> </li>
+				<li>Nihal Naeem <b>(aka&nbspThe&nbspElder&nbspBrother!)</b> </li>
+				<li>Raihan Naeem <b>(aka&nbspThe&nbsp"broski&nbsp:P")</b> </li>
 			</ul>
-			<div id="famimgdiv">
-				<div id="backbtn" onclick="chgImg(-1)"><p style="margin-right: 4.5rem;"><</p></div>
+			<div class="famimgdiv famimgdiv-sm">
+				<div class="famimg-controls-bg" id="backbtn" onclick="chgImg(-1)"><p><</p></div>
 				<img id="famimg" src="./images/dad.jpeg" title="the Dad!">
-				<div id="frntbtn" onclick="chgImg(1)"><p style="margin-left: 4.5rem;">></p></div>
+				<div class="famimg-controls-bg" id="frntbtn" onclick="chgImg(1)"><p>></p></div>
 			</div>
-			<p>
+			<p class="famimg-controls-sm" id="prev" onclick="chgImg(-1)">prev</p><p class="famimg-controls-sm" id="next" onclick="chgImg(1)">next</p> 
 				<em>(Psst...find the family photo!)</em>
-			</p>
+			
 		</section>
 	</div>
 

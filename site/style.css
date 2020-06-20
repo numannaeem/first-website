@@ -4,8 +4,12 @@
 	box-sizing: border-box;
 }
 
+html{
+	font-size: 16px;
+}
+
 body {  
-	min-width: 750px;
+	min-width: 360px;
   	color: black;
   	font-size: 1.4em;
   	font-family: 'Red Hat Text', sans-serif;
@@ -13,7 +17,6 @@ body {
 
 p {
 	line-height: 1.6;
-	margin-top: 4px;
 	margin-bottom: 5px;
 }
 
@@ -25,7 +28,7 @@ a {
 /*-------------------------------------------------------------------------------------------------------------------------------------------------*/
 
 .headings {
-	margin-top: 4px;
+	margin-top: 9px;
 	margin-bottom: 15px;
 	font-family: 'Raleway Dots', sans-serif;
 	padding: 3px 0px 8px 0px;
@@ -35,6 +38,10 @@ a {
 
 }
 
+.hamburger {
+	display: none;
+}
+
 .boxdiv {
 	transition: background-color 0.5s linear , color 0.5s linear;
 	background-color: #fffff1;
@@ -42,6 +49,7 @@ a {
   	margin: 0;
   	padding: 10px 30px 15px 30px;
   	overflow: auto;
+  	clear: both;
 }
 
 .boxdiv ul {
@@ -59,8 +67,12 @@ a {
 	padding-top: 9px;
 	padding-bottom: 2px;
 	height: 3.7rem;
+	margin-left: -7px;
 }
 
+.famimg-controls-sm {
+	display: none;
+}
 /*-------------------------------------------------------------------------------------------------------------------------------------------------*/
 
 
@@ -93,24 +105,27 @@ a {
 }
 
 #navbar {
-	height: 4.85rem;
 	overflow: hidden;
+	height: 4.86rem;
+	padding: 0;
 	background-color: #383431;
 	position: sticky;
 	top: 0;
 	border-bottom: 1px solid;
 	border-color: #cc9900;
+	transition: 0.5s;
 }
 
 #logo {
 	position: absolute;
 	right: 0;
-	height: 100%;
-	margin-right: 10px;
+	height: 4.86rem;
+	margin-right: 8px;
+	z-index: -1;
 }
 
 
-#mButtons a {
+.menu-items {
 	margin: 0px 0px; 
 	font-size: 1.4rem;
 	font-family: 'Raleway Dots', sans-serif;
@@ -121,13 +136,13 @@ a {
 	
 }
 
-#mButtons a:link , a:visited {
+#navbar a:link ,#navbar a:visited {
   	color: White;
 }
 
 
-#mButtons a:hover {
-	border-bottom: solid #cc9900 10px;
+#navbar a:hover {
+	border-bottom: solid #cc9900 3px;
   	color: White;
   	background: rgba(30,30,30,0.4);
  
@@ -137,25 +152,25 @@ a {
 	transition: 0.5s linear; 
 }
 
-#potrait {
+#portrait {
 	height: 305px;
 	width: 250px;
-	margin-top: 0.6rem;
+	margin-top: 0.4rem;
 	object-fit: cover;
 	float: left;
-	border-right: rgb(140,140,140) solid 3px;
 	margin-right: 0.9rem;
+	border-radius: 1.5rem;
 	  
 }
 
-#famimgdiv {
+.famimgdiv {
 	background-color: rgba(85,85,85,0.5);
 	margin: 1rem 0;
 	display: grid;
 	grid-template-columns: repeat(3,1fr);
 	align-items: center;
 	height: 23rem;
-	border-radius: 2rem;
+	border-radius: 1.5rem;
 }
 
 #famimg {
@@ -166,7 +181,7 @@ a {
 	margin: auto;
 }
 
-#backbtn, #frntbtn { 
+.famimg-controls-bg { 
 	user-select: none;
 	font-size: 4rem;
 	display: flex;
@@ -179,6 +194,12 @@ a {
 
 #backbtn {
 	justify-content: flex-end;
+	margin-right: 4rem;
+}
+
+#frntbtn {
+	justify-content: flex-start;
+	margin-left: 4rem;
 }
 
 #frntbtn:hover {
@@ -194,7 +215,7 @@ a {
 #closure {
 	transition: background-color 0.5s linear , color 0.5s linear; 
 	text-align: center;
-	font-size: 1rem;
+	font-size: 0.75rem;
 	padding: 0.4rem 0rem 0.7rem 0rem;
 	background-color: white;
 	color: black;
@@ -206,5 +227,112 @@ a {
 }
 
 #closure > label {
-	font-size: 1rem;
+	font-size: 0.75rem;
+}
+
+/*---------------------------------------------------------------------------------------------------MEDIA QUERIES---------------------*/
+
+@media only screen and (max-width: 750px) {
+	#header h1 {
+		padding-top: 3rem; 
+		font-size: 5rem;
+	}
+
+	#header h3 {
+		font-size: 1.5rem;
+		padding: 0 1rem 3rem 1rem;
+	}
+
+	#about {
+		text-align: justify;
+	}
+
+	#portrait {
+		width: 100%;
+		border-radius: 1.5rem; 
+		margin-bottom: 1rem;
+		border: none;
+	}
+
+	.famimg-controls-sm {
+		display: initial;
+		border: solid 1px brown;
+		border-radius: 3rem;
+		width: 47%;
+		text-align: center;
+		color: brown;
+		margin-bottom: 1rem;
+		margin-top: 0;
+		user-select: none;
+	}
+
+	.famimg-controls-sm:active {
+		background-color: brown;
+		color: beige; 
+	}
+
+	#next {
+		float:right;
+	}
+
+	#prev {
+		float: left;
+	}
+
+	#famimg {
+		border-radius: 1.5rem;
+	}
+
+	.famimgdiv-sm {
+		display: block;
+	}
+
+	.famimg-controls-bg {
+		display: none;
+	}
+
+	#navbar, #logo {
+		height: 4.2rem;
+	}
+
+	.menu-items-collapsed {
+		display: none;
+	}
+
+	.hamburger {
+		display: initial;
+		margin-top: 17px;
+		margin-left: 18px; 
+		margin-bottom: 1rem;
+		float: left;
+		height: 33px;
+		width: 40px;
+		
+	}
+	.top, .bottom, .middle{
+		float: left;
+		margin-top: 4px;
+		margin-bottom: 3px; 
+		background-color: white;
+		height: 3.5px;
+		width: 90%;
+		border-radius: 1rem;
+	}
+
+	.mi-collapsed {
+		display: none;
+	}
+
+	.mi-expanded {
+		display: block;
+		width: 100%;
+		clear: both;
+		border: none;
+		text-align: center;
+		padding: 1rem 0;
+	}
+
+	#navbar a:hover{
+		border: none;
+	}
 }

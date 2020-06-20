@@ -4,6 +4,7 @@ var headerTexts = ["hello, world.","welcome","to","my","website.","enjoy","your"
 					"stop!!!","alright.","i'm done.","bye.","~"];
 var hdrCounter = 1;
 var imgCounter = 1;
+var menuOpened = 0;
 
 function updtHeader() {	
 	document.getElementById("mainHeader").innerHTML = headerTexts[hdrCounter];
@@ -100,4 +101,37 @@ function chgImg(x) {
 	}},170);
 	
 	setTimeout(function() {famimg.style.opacity = "1"} , 200);
+}
+
+
+function dropMenu() {
+	var navbar = document.getElementById("navbar");
+	var menuItems = null;
+	var i = 0;
+	if(!menuOpened) {
+		menuItems = document.getElementsByClassName("mi-collapsed");	
+		navbar.style.height = "fit-content";
+		for(var i = 0; i < menuItems.length; i++) {
+			menuItems[i].classList.add('mi-expanded');
+			menuItems[i].classList.remove('mi-collapsed'); 
+		}
+		for(var i = 0; i < menuItems.length; i++) {
+			menuItems[i].classList.add('mi-expanded');
+			menuItems[i].classList.remove('mi-collapsed'); 
+		} 
+		menuOpened = 1;
+	}
+	else {
+		menuItems = document.getElementsByClassName("mi-expanded");
+		navbar.style.height = "4.2rem";
+		for(var i = 0; i < menuItems.length; i++) {
+			menuItems[i].classList.add('mi-collapsed');
+			menuItems[i].classList.remove('mi-expanded'); 
+		}
+		for(var i = 0; i < menuItems.length; i++) {
+			menuItems[i].classList.add('mi-collapsed');
+			menuItems[i].classList.remove('mi-expanded'); 
+		} 
+		menuOpened = 0;
+	}
 }
