@@ -110,10 +110,11 @@ function dropMenu() {
 			|| document.documentElement.clientWidth
 			|| document.body.clientWidth;
 	var navbar = document.getElementById("navbar");
+	var hamburger = document.getElementById("hamburger");
 	var menuItems = null;
 	if(!menuOpened && width < 800) {
 		menuItems = document.getElementsByClassName("mi-collapsed");	
-		
+		hamburger.style.backgroundColor = "brown";
 		for(var i = 0; i < menuItems.length; i++) {
 			menuItems[i].classList.add('mi-expanded');
 			menuItems[i].classList.remove('mi-collapsed'); 
@@ -127,6 +128,7 @@ function dropMenu() {
 	}
 	else if(menuOpened) {
 		menuItems = document.getElementsByClassName("mi-expanded");
+		hamburger.style.backgroundColor = "#383431";
 		for(var i = 0; i < menuItems.length; i++) {
 			menuItems[i].classList.add('mi-collapsed');
 			menuItems[i].classList.remove('mi-expanded'); 

@@ -291,23 +291,25 @@ ul {
 		display: none;
 	}
 
-	.hamburger {
+	#hamburger {
 		display: initial;
-		margin-top:20px;
-		margin-left: 18px; 
-		margin-bottom: 20px;
-		float: left;
-		height: 33px;
-		width: 40px;
-		
+		padding-top:20px;
+		padding-right: 0px; 
+		padding-bottom: 20px;
+		float: right;
+		height: 4.5rem;
+		width: 4.5rem;	
 	}
 	.top, .bottom, .middle{
-		float: left;
+		display: block;
+		clear: both;
+		margin-right: auto;
+		margin-left: auto;
 		margin-top: 4px;
-		margin-bottom: 3px; 
+		margin-bottom: 7px; 
 		background-color: white;
 		height: 3.5px;
-		width: 90%;
+		width: 58%;
 		border-radius: 1rem;
 	}
 
