@@ -64,6 +64,7 @@ function darkMode() {
 
 function chgImg(x) {
 	var famimg = document.getElementById("famimg");
+	var caption = document.getElementById("caption");
 	famimg.style.opacity = "0";
 	
 	if (x == -1) {
@@ -85,19 +86,19 @@ function chgImg(x) {
 
 	setTimeout(function(){ switch(imgCounter) {
 		case 1: famimg.src = "./images/dad.jpeg";
-				famimg.title = "the Dad!";
+				caption.innerHTML = "the Dad!";
 				break;
 		case 2: famimg.src = "./images/mom.jpg";
-				famimg.title = "the Mom!";
+				caption.innerHTML = "the Mom!";
 				break;
 		case 3: famimg.src = "./images/bbro.jpeg";
-				famimg.title = "the Big Bro!";
+				caption.innerHTML = "the Big Bro!";
 				break;
 		case 4: famimg.src = "./images/sbro.JPG";
-				famimg.title = "the Broski!";
+				caption.innerHTML = "the Broski!";
 				break;
 		case 5: famimg.src = "./images/fam.jpg";
-				famimg.title = "the Fam!";
+				caption.innerHTML = "the Fam!";
 				break;
 	}},170);
 	

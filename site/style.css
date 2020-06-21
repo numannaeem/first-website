@@ -36,7 +36,7 @@ ul {
 .headings {
 	margin-top: 9px;
 	margin-bottom: 15px;
-	font-family: 'Raleway Dots', sans-serif;
+	font-family: 'Spartan', sans-serif;
 	padding: 3px 0px 8px 0px;
 	font-size: 2.2rem;
 	color: Brown;
@@ -124,23 +124,23 @@ ul {
 
 
 .menu-items {
-	margin: 0px 0px; 
-	font-size: 1.4rem;
-	font-family: 'Raleway Dots', sans-serif;
+	margin: 0;
+	font-size: 1.3rem;
+	font-family: 'Spartan', sans-serif;
 	float: left;
-	padding: 1.56rem 1.44vw;
+	padding: 1.59rem 1.44vw;
 	text-decoration: none;
 	text-align: center;
 	
 }
 
 #navbar a:link ,#navbar a:visited {
-  	color: White;
+  	color: #cccccc;
 }
 
 
 #navbar a:hover {
-	border-bottom: solid #cc9900 3px;
+	font-weight: 600;
   	color: White;
   	background: rgba(30,30,30,0.4);
 }
@@ -169,12 +169,29 @@ ul {
 	border-radius: 1.5rem;
 }
 
+.container {
+	height: 100%;
+	position: relative;
+	overflow: hidden;
+}
+
 #famimg {
 	transition: 0.15s ease-in;
 	height: 100%;
 	width: 100%;
 	object-fit: cover;
 	margin: auto;
+}
+
+#caption {
+	margin: 0;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+	color: white;
+	text-shadow: 0px 0px 6px black;
+
 }
 
 .famimg-controls-bg { 
@@ -239,6 +256,15 @@ ul {
 		padding: 0 1rem 3rem 1rem;
 	}
 
+	.headings {
+		text-align: center;
+	}
+
+	.filler {
+		margin-left: auto;
+		margin-right: auto;
+	}
+
 	#about {
 		text-align: justify;
 	}
@@ -275,7 +301,7 @@ ul {
 		float: left;
 	}
 
-	#famimg {
+	#famimg, #caption {
 		border-radius: 1.5rem;
 	}
 
@@ -309,7 +335,7 @@ ul {
 		margin-bottom: 7px; 
 		background-color: white;
 		height: 3.5px;
-		width: 58%;
+		width: 53%;
 		border-radius: 1rem;
 	}
 
@@ -321,7 +347,6 @@ ul {
 		display: block;
 		width: 100%;
 		clear: both;
-		border: none;
 		text-align: center;
 		padding: 1rem 0;
 	}

@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>First Webpage!</title>
-  <link href='https://fonts.googleapis.com/css?family=Jost|Red Hat Text|Raleway Dots' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Jost|Red Hat Text|Spartan' rel='stylesheet'>
   <link rel="stylesheet" href="./style.css">
   <script src="java1.js"></script>
 
@@ -26,11 +26,9 @@
 			<span class="bottom"></span>
 		</div>	
 		<a href="#header"><img id="logo" src="./images/logo.jpg"></a>
-		<b>
-			<a class="menu-items mi-collapsed" href="#about" onclick="dropMenu()">About Me</a>
+				<a class="menu-items mi-collapsed" href="#about" onclick="dropMenu()">About Me</a>
 			<a class="menu-items mi-collapsed" href="#socialmedia" onclick="dropMenu()">Social Media</a>
 			<a class="menu-items mi-collapsed" href="#family" onclick="dropMenu()">The Family</a> 
-		</b>
 			
 	</div>		
 	
@@ -77,14 +75,17 @@
 			<h3 class="headings">mi familia</h3>
 			<p>Or, the people with me through thick and thin. Here they are:</p>
 			<ul>
-				<li>Naeem Cee <b>(aka&nbspThe&nbspDad!)</b> </li>
-				<li>Raseena Naeem <b>(aka&nbspThe&nbspMom!)</b> </li>
-				<li>Nihal Naeem <b>(aka&nbspThe&nbspElder&nbspBrother!)</b> </li>
-				<li>Raihan Naeem <b>(aka&nbspThe&nbsp"broski&nbsp:P")</b> </li>
+				<li>Naeem Cee  </li>
+				<li>Raseena Naeem  </li>
+				<li>Nihal Naeem </li>
+				<li>Raihan Naeem </li>
 			</ul>
 			<div class="famimgdiv famimgdiv-sm">
 				<div class="famimg-controls-bg" id="backbtn" onclick="chgImg(-1)"><p><</p></div>
-				<img id="famimg" src="./images/dad.jpeg" title="the Dad!">
+				<div class="container">
+					<img id="famimg" src="./images/dad.jpeg">
+					<p id="caption">the Dad!</p>
+				</div>
 				<div class="famimg-controls-bg" id="frntbtn" onclick="chgImg(1)"><p>></p></div>
 			</div>
 			<p class="famimg-controls-sm" id="prev" onclick="chgImg(-1)">prev</p><p class="famimg-controls-sm" id="next" onclick="chgImg(1)">next</p> 
