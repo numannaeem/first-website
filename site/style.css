@@ -25,6 +25,12 @@ a {
 	text-decoration: none;
 }
 
+
+ul {
+	list-style: circle;
+	margin: 8px 1px 4px 0px;
+}
+
 /*-------------------------------------------------------------------------------------------------------------------------------------------------*/
 
 .headings {
@@ -49,16 +55,6 @@ a {
   	margin: 0;
   	padding: 10px 30px 15px 30px;
   	overflow: auto;
-  	clear: both;
-}
-
-.boxdiv ul {
-	list-style: circle;
-	margin: 8px 1px 4px 0px;
-}
-
-.boxdiv ol{
-	margin: 8px 1px 4px 0px;
 }
 
 
@@ -113,7 +109,9 @@ a {
 	top: 0;
 	border-bottom: 1px solid;
 	border-color: #cc9900;
-	transition: 0.5s;
+	max-height: 500px;
+  	transition: 0.7s;
+	
 }
 
 #logo {
@@ -145,7 +143,6 @@ a {
 	border-bottom: solid #cc9900 3px;
   	color: White;
   	background: rgba(30,30,30,0.4);
- 
 }
 
 #content {
@@ -155,7 +152,6 @@ a {
 #portrait {
 	height: 305px;
 	width: 250px;
-	margin-top: 0.4rem;
 	object-fit: cover;
 	float: left;
 	margin-right: 0.9rem;
@@ -222,7 +218,7 @@ a {
 }
 
 #darkmode {
-	height: 0.75rem;
+	height:0.75rem;
 	width: 0.75rem;
 }
 
@@ -291,19 +287,15 @@ a {
 		display: none;
 	}
 
-	#navbar, #logo {
-		height: 4.2rem;
-	}
-
 	.menu-items-collapsed {
 		display: none;
 	}
 
 	.hamburger {
 		display: initial;
-		margin-top: 17px;
+		margin-top:20px;
 		margin-left: 18px; 
-		margin-bottom: 1rem;
+		margin-bottom: 20px;
 		float: left;
 		height: 33px;
 		width: 40px;
@@ -334,5 +326,14 @@ a {
 
 	#navbar a:hover{
 		border: none;
+	}
+
+	#logo {
+		margin-left: auto;
+		margin-right: auto;
+		left: 0;
+		right: 0;
+		position: absolute;
+
 	}
 }

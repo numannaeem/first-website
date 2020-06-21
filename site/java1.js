@@ -1,10 +1,11 @@
 var headerTexts = ["hello, world.","welcome","to","my","website.","enjoy","your",
 					"stay!","okay,","you","may","stop","clicking","now.","seriously?",
 					"you're","still","doing","this?","wow.","-_-","stop!","stop!!",
-					"stop!!!","alright.","i'm done.","bye.","~"];
+					"stop!!!","alright.","i'm done.","~"];
 var hdrCounter = 1;
 var imgCounter = 1;
 var menuOpened = 0;
+
 
 function updtHeader() {	
 	document.getElementById("mainHeader").innerHTML = headerTexts[hdrCounter];
@@ -105,12 +106,14 @@ function chgImg(x) {
 
 
 function dropMenu() {
+	var width = window.innerWidth
+			|| document.documentElement.clientWidth
+			|| document.body.clientWidth;
 	var navbar = document.getElementById("navbar");
 	var menuItems = null;
-	var i = 0;
-	if(!menuOpened) {
+	if(!menuOpened && width < 800) {
 		menuItems = document.getElementsByClassName("mi-collapsed");	
-		navbar.style.height = "fit-content";
+		
 		for(var i = 0; i < menuItems.length; i++) {
 			menuItems[i].classList.add('mi-expanded');
 			menuItems[i].classList.remove('mi-collapsed'); 
@@ -119,11 +122,11 @@ function dropMenu() {
 			menuItems[i].classList.add('mi-expanded');
 			menuItems[i].classList.remove('mi-collapsed'); 
 		} 
+		navbar.style.height = "auto";
 		menuOpened = 1;
 	}
-	else {
+	else if(menuOpened) {
 		menuItems = document.getElementsByClassName("mi-expanded");
-		navbar.style.height = "4.2rem";
 		for(var i = 0; i < menuItems.length; i++) {
 			menuItems[i].classList.add('mi-collapsed');
 			menuItems[i].classList.remove('mi-expanded'); 
@@ -132,6 +135,7 @@ function dropMenu() {
 			menuItems[i].classList.add('mi-collapsed');
 			menuItems[i].classList.remove('mi-expanded'); 
 		} 
+		navbar.style.height = "4.86rem";
 		menuOpened = 0;
 	}
 }
