@@ -105,6 +105,7 @@ function chgImg(x) {
 	setTimeout(function() {famimg.style.opacity = "1"} , 200);
 }
 
+//--------------------------------------------------------------------------------------------------------------------------------------- 
 
 function dropMenu() {
 	var width = window.innerWidth
@@ -113,31 +114,23 @@ function dropMenu() {
 	var navbar = document.getElementById("navbar");
 	var hamburger = document.getElementById("hamburger");
 	var menuItems = null;
-	if(!menuOpened && width < 800) {
+	if(!menuOpened) {
 		menuItems = document.getElementsByClassName("mi-collapsed");	
 		hamburger.style.backgroundColor = "brown";
-		for(var i = 0; i < menuItems.length; i++) {
-			menuItems[i].classList.add('mi-expanded');
-			menuItems[i].classList.remove('mi-collapsed'); 
+		while (menuItems.length > 0) {
+			menuItems.item(0).classList.add('mi-expanded');
+			menuItems[0].classList.remove('mi-collapsed');
 		}
-		for(var i = 0; i < menuItems.length; i++) {
-			menuItems[i].classList.add('mi-expanded');
-			menuItems[i].classList.remove('mi-collapsed'); 
-		} 
 		navbar.style.height = "auto";
 		menuOpened = 1;
 	}
 	else if(menuOpened) {
 		menuItems = document.getElementsByClassName("mi-expanded");
 		hamburger.style.backgroundColor = "#383431";
-		for(var i = 0; i < menuItems.length; i++) {
-			menuItems[i].classList.add('mi-collapsed');
-			menuItems[i].classList.remove('mi-expanded'); 
+		while (menuItems.length > 0) {
+			menuItems.item(0).classList.add('mi-collapsed');
+			menuItems[0].classList.remove('mi-expanded');
 		}
-		for(var i = 0; i < menuItems.length; i++) {
-			menuItems[i].classList.add('mi-collapsed');
-			menuItems[i].classList.remove('mi-expanded'); 
-		} 
 		navbar.style.height = "4.86rem";
 		menuOpened = 0;
 	}
