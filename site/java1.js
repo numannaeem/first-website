@@ -34,7 +34,6 @@ function darkMode() {
 		for(var i = 0; i < content_elements.length; i++) {
 			content_elements[i].style.backgroundColor = "#201e19";
 			content_elements[i].style.color = "#d9d9d9";
-			content_elements[i].style.borderColor = "gray";
 			headings[i].style.color = "#e60000";
 		}
 		closure.style.backgroundColor = "#333333";
@@ -49,10 +48,9 @@ function darkMode() {
 		for(var i = 0; i < content_elements.length; i++) {
 			content_elements[i].style.backgroundColor = "#fffff1";
 			content_elements[i].style.color = "black";	
-			content_elements[i].style.borderColor = "black";
 			headings[i].style.color = "brown";
 		}
-		closure.style.backgroundColor = "#ffffff";
+		closure.style.backgroundColor = "white";
 		closure.style.color = "black";
 		header.style.backgroundImage = "url('./images/bgimgwhite.jpg')";
 		header.style.color = "#996b17";
@@ -121,7 +119,6 @@ function dropMenu() {
 			menuItems.item(0).classList.add('mi-expanded');
 			menuItems[0].classList.remove('mi-collapsed');
 		}
-		navbar.style.height = "auto";
 		menuOpened = 1;
 	}
 	else if(menuOpened) {
@@ -131,7 +128,6 @@ function dropMenu() {
 			menuItems.item(0).classList.add('mi-collapsed');
 			menuItems[0].classList.remove('mi-expanded');
 		}
-		navbar.style.height = "4.86rem";
 		menuOpened = 0;
 	}
 }
